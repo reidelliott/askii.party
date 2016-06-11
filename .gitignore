@@ -1,0 +1,67 @@
+# Application
+web/app/mu-plugins/*/
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+!web/app/plugins/index.php
+!web/app/plugins/acf-repeater
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
+!web/app/uploads/index.php
+!web/app/mu-plugins/disallow-indexing.php
+!web/app/mu-plugins/register-theme-directory.php
+!web/app/mu-plugins/bedrock-autoloader.php
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Premium Plugins
+!web/app/algoliasearch-wordpress
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
+
+#SASS-CACHE
+web/app/themes/*/library/scss/.sass-cache/*
+
+# Vagrant
+bin
+.vagrant
+
+# Node/Grunt/Gulp/Bower
+*node_modules
+*bower_components
+secret.json
+
+# Ignore log files
+web/logs/*
+!web/logs/.gitkeep
+
+# Ignore db dumps
+web/mysqldumps/*
+!web/mysqldumps/.gitkeep
+
+# Ignore provision checks
+web/provision-checks/*
+!web/provision-checks/.gitkeep
+!web/provision-checks/readme_added.md
+
+# Vim
+*.*~
+*.*.swp
+
+Thumbs.db
+*.DS_Store
+html/
+web/app/debug.log
